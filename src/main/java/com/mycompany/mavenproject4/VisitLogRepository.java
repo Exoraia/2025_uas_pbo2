@@ -36,7 +36,17 @@ public class VisitLogRepository {
            return visitLog;
        }
 
-   public static boolean delete(int id) {
+   public static boolean delete(Long id) {
        return visitLogList.removeIf(p -> p.getId() == (id));
+   }
+
+   public static Object add(String argument, double doubleValue, String argument2) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'add'");
+   }
+
+   public static Object update(long long1, String argument, double doubleValue, String argument2) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'update'");
    }
 }
