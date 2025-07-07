@@ -25,7 +25,7 @@ class ButtonEditor extends DefaultCellEditor {
 
     @Override
     public Component getTableCellEditorComponent(JTable table, Object value,
-                                                 boolean isSelected, int row, int column) {
+                                                boolean isSelected, int row, int column) {
         label = (value == null) ? "" : value.toString();
         button.setText(label);
         isPushed = true;

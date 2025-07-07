@@ -1,0 +1,18 @@
+type Log {
+ id: ID!
+ name: String!
+ nim: String!
+ studyprogram: String!
+ purpose: String!
+}
+
+type Query {
+ allLogs: [Log]
+ logById(id: ID!): Log
+}
+
+type Mutation {
+ addLog( name: String!, nim: String!, studyprogram: String!, purpose: String!): Log
+ deleteLog(id: ID!): Boolean
+ updateLog(name: String!, nim: String!, studyprogram: String!, purpose: String!): Log
+}
